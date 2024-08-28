@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <a href="#about" class="logo"><span>Priya Kumari</span></a>
+        <ul class="nav-links">
+            <li>
+                <a href="#about-me">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li> 
+                <a href="#certificates">Certificates</a>
+            </li>
+            <li> 
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="visit-btn"><a href="https://github.com/vibin8">Visit GitHub</a></button>
+    </header>
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="static/image.jpg" alt="Profile Picture">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Priya Kumari</h1>
+                    <span>Data Analyst</span>
+                </div>
+                <div class="btn-group">
+                    <div class="btn"><a href="static/CV.pdf" download>Download CV</a></div>
+                    <div class="btn"><a href="#contact">Contact</a></div>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/vibin8"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/priyakumari7/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-me" class="about-me">
+        <h2 class="section-title">About Me</h2>
+        <p style="text-align: justify;">Data science enthusiast proficient in Python, SQL, and machine learning frameworks like TensorFlow and Scikit-Learn.
+           Experienced in data manipulation, statistical analysis, and visualization techniques.
+           Passionate about applying advanced analytical skills to solve complex challenges and drive data-driven decision-making.</p>
+    </section>
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-info">
+            <div class="grid">
+                
+                <div class="grid-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Data Scientist (Intern) at
+                        Brainybeam Info-Tech PVT LTD, Ahmedabad, Gujarat</span>
+                    <h3>April 1, 2024 - April 15, 2024</h3>
+                    <br>
+                    <p style="text-align: justify;">Completed a 15-day internship focused on analyzing customer behavior and engagement in e-commerce using the Ecommerce Customers dataset.
+                        
+                        Conducted exploratory data analysis and applied statistical modeling techniques to extract insights into customer preferences and engagement patterns.
+                        
+                        Utilized Python libraries including Pandas, NumPy, Matplotlib, and Seaborn for data preprocessing, visualization, and analysis.
+                        
+                        Investigated factors influencing customer loyalty and lifetime value, such as average session length, time spent on different platforms (App and Website), and membership duration.
+                        
+                        Contributed to data-driven recommendations for optimizing platform performance and enhancing user experience.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-brands fa-aws"></i>
+                    <span>AWS Cloud Computing</span>
+                    <h3>June 1, 2023 - June 20, 2023</h3>
+                    <br>
+                    <p style="text-align: justify;">Deployed and managed cloud infrastructure using AWS services such as EC2, S3, RDS, Lambda, IAM, and VPC.
+                        Configured and monitored EC2 instances, S3 buckets, and RDS databases to ensure optimal performance.
+                        Implemented security best practices, including setting up IAM roles and configuring VPC for enhanced security.
+                        Automated tasks with AWS Lambda, streamlining processes and reducing manual effort.
+                        Enhanced infrastructure efficiency, security, and reduced operational costs through effective resource management and performance tuning.      
+                    </p>
+                </div>
+            </div>
+            <!-- <img src="static/image.jpg" alt="Profile Picture"> -->
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="static/dressly.png" alt="Dressly">
+                <h3>Dressly</h3>
+                <p>Engineered a Flask-based virtual wardrobe app, leveraging PostgreSQL for efficient data management and storage.
+                   Built the 'MatchMyFit' algorithm to dynamically generate personalized outfit suggestions based on user inputs and contextual factors.
+                   Crafted an interactive UI with HTML, CSS, and JavaScript, incorporating various effects for enhanced user engagement.
+                   Optimized backend processes for image upload, categorization, and retrieval, ensuring seamless user experiences.
+                   Developed an AI-powered chatbot using the LLaMA 3 model to provide personalized styling advice and enhance user engagement.</p>
+                <div class="btn-group">
+                    <div class="btn"><a href="https://github.com/vibin8/Dressly">GitHub Repo</a></div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="static/agrorishi.png" alt="AgroRishi">
+                <h3>AgroRishi</h3>
+                <p>Developed AgroRishi, a Flask-based platform integrating Bluetooth sensors to monitor and display real-time soil moisture, temperature, and humidity data.
+                   Deployed ML models for real-time crop health analysis, enhancing early disease detection and providing data-driven recommendations.
+                   Designed and implemented a multilingual chatbot using LLaMA 3 for personalized farming advice, pest management, and contextual support.
+                   Created a dynamic dashboard for visualizing sensor data and providing actionable insights, enhancing farm management efficiency.</p>
+                <div class="btn-group">
+                    <div class="btn"><a href="https://github.com/vibin8/AgroRishi">GitHub Repo</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <li>
+                <h3>Python</h3>
+                <span class="bar"><span class="python"></span></span>
+            </li>
+            <li>
+                <h3>SQL</h3>
+                <span class="bar"><span class="sql"></span></span>
+            </li>
+            <li>
+                <h3>Machine Learning</h3>
+                <span class="bar"><span class="ml"></span></span>
+            </li>
+            <li>
+                <h3>TensorFlow</h3>
+                <span class="bar"><span class="tf"></span></span>
+            </li>
+            <li>
+                <h3>Tableau</h3>
+                <span class="bar"><span class="tab"></span></span>
+            </li>
+            <li>
+                <h3>MS Office (Word, PowerPoint, Excel)</h3>
+                <span class="bar"><span class="ms"></span></span>
+            </li>
+        </div>
+    </section>
+    <section id="certificates" class="certificates">
+        <h2 class="section-title">Certificates</h2>
+
+        <div class="certificates-grid">
+            <div class="certificates-card">
+                <h3>Participation in Hackout'24</h3>
+                <img src="static/Hackathon.jpg" alt="Hackathon Certificate">
+            </div>
+            <div class="certificates-card">
+                <h3>Data Science Internship</h3>
+                <img src="static/ds.jpg" alt="Data Science Internship Certificate">
+            </div>
+            <div class="certificates-card">
+                <h3>AWS Cloud Computing Internship</h3>
+                <img src="static/aws.jpg" alt="AWS Cloud Computing Internship Certificate">
+            </div>
+            <div class="certificates-card">
+                <h3>The Data Science Course: Complete Data Science Bootcamp 2022</h3>
+                <img src="static/dsu.jpg" alt="Data Science Bootcamp Certificate">
+            </div>
+            <div class="certificates-card">
+                <h3>Data Manipulation in Python: Master Python, NumPy & Pandas</h3>
+                <img src="static/python.jpg" alt="Profile Picture">
+            </div>
+            <div class="certificates-card">
+                <h3>Python And Flask Framework Complete Course For Beginners</h3>
+                <img src="static/flask.jpg" alt="Profile Picture">
+            </div>
+            <div class="certificates-card">
+                <h3>Google Code-in</h3>
+                <img src="static/gci.jpg" alt="Profile Picture">
+            </div>
+            <div class="certificates-card">
+                <h3>The Fundamentals of Digital Marketing</h3>
+                <img src="static/dmg.jpg" alt="Profile Picture">
+            </div>
+            
+        </div>
+
+    </section>
+    <section id="contact" class="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="https://formspree.io/f/xldrzprn" method="POST" method="POST">
+                <div class="input">
+                    <input type="email" name="email" placeholder="example@email.com" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section> 
+    <footer>
+        <ul>
+            <li>
+                <a href="#about-me">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li> 
+                <a href="#certificates">Certificates</a>
+            </li>
+            <li> 
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">© Portfolio Developed By Priya Kumari </p>
+    </footer>
+    <script src="static/script.js"></script>
+</body>
+</html>
