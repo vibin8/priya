@@ -327,27 +327,27 @@ a{
     background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
 }
 .python{
-    width: 75%;
+    width: 89%;
     animation:python 3s;
 }
 .sql{
     width: 85%;
     animation:c 3s;
 }
-.ml{
-    width: 65%;
+.flask{
+    width: 88%;
     animation:javascript 3s;
 }
-.tf{
+.javascript{
     width: 60%;
     animation:html 3s;
 }
-.tab{
-    width: 67%;
+.aws{
+    width: 85%;
     animation:css 3s;
 }
-.ms{
-    width: 90%;
+.flutter{
+    width: 84%;
     animation:css 3s;
 }
 .input-box{
@@ -536,4 +536,5 @@ footer ul li a{
     .nav-links.show {
         display: block;
     } 
+
 }
