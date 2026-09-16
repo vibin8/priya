@@ -1,268 +1,550 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Priya Kumari — Full-Stack Developer</title>
-  <meta name="description" content="Priya Kumari — Full-stack developer specialized in SaaS, scalable web apps, AI-powered tools, and mobile apps. Python, Flask, Node.js, Flutter, AWS." />
+  <meta name="description" content="Priya Kumari — full-stack developer building SaaS platforms, ERP systems and AI products. Python (Flask, FastAPI), Next.js, React, Flutter, PostgreSQL, AWS." />
+  <meta name="theme-color" content="#ffcf00" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Priya Kumari — Full-Stack Developer" />
+  <meta property="og:description" content="I build SaaS platforms, ERP systems and AI products — brick by brick." />
+  <meta property="og:url" content="https://vibin8.github.io/priya/" />
+
   <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="static/style.css" />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
+
 <body>
-  <!-- Header -->
-  <header class="header">
-    <a href="#about" class="logo" aria-label="Go to About">
-      <span>Priya Kumari</span>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- ══════════ TOP BAR ══════════ -->
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="Priya Kumari — back to top">
+      <span class="brand-brick brick brick--red" aria-hidden="true">PK</span>
+      <span class="brand-text">
+        <strong>Priya Kumari</strong>
+        <em>Full-Stack Developer</em>
+      </span>
     </a>
 
-    <ul class="nav-links" role="navigation" aria-label="Primary">
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#about"><span class="nav-no">01</span>About</a>
+      <a href="#experience"><span class="nav-no">02</span>Experience</a>
+      <a href="#projects"><span class="nav-no">03</span>Projects</a>
+      <a href="#skills"><span class="nav-no">04</span>Skills</a>
+      <a href="#certificates"><span class="nav-no">05</span>Certificates</a>
+      <a href="#contact"><span class="nav-no">06</span>Contact</a>
+    </nav>
 
-    <i class="fa-solid fa-bars" id="menu-icon" aria-label="Open menu"></i>
-    <button class="visit-btn"><a href="https://github.com/vibin8" rel="noopener">Visit GitHub</a></button>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to night baseplate" title="Day / night baseplate">
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+    </div>
   </header>
 
-  <!-- Hero / About -->
-  <section id="about" class="about">
-    <div class="about-container">
-      <img src="static/image.jpg" alt="Priya Kumari profile photo" loading="eager" />
-
-      <div class="info-box">
-        <div class="text">
-          <h3>Hi, I'm</h3>
-          <h1>Priya Kumari</h1>
-          <span>Full-Stack Developer</span>
-        </div>
-
-        <p class="tagline">
-          I build SaaS platforms, scalable web apps, AI-powered tools, and mobile apps. I love shipping
-          clean backends, reliable APIs, and smooth UIs—deployed to the cloud with CI/CD.
+  <main>
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">
+          <span class="kicker-dot" aria-hidden="true"></span>
+          Build instructions &middot; Set 2026 &middot; Ages 0&ndash;99
         </p>
 
-        <div class="btn-group">
-          <div class="btn"><a href="static/CV.pdf" download>Download Resume</a></div>
-          <div class="btn"><a href="#contact">Contact</a></div>
-        </div>
+        <h1 class="hero-title">
+          I build software
+          <span class="hero-title-accent">brick by brick.</span>
+        </h1>
 
-        <div class="socials">
-          <a href="https://github.com/vibin8" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/priyakumari7/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="mailto:priyakumari4j4@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Me -->
-  <section id="about-me" class="about-me">
-    <h2 class="section-title">About Me</h2>
-    <p style="text-align: justify;">
-      Full-stack developer specialized in building SaaS platforms, scalable web applications, AI-powered tools,
-      and mobile apps. Skilled in backend architecture, REST API development, cloud deployments, and modern UI design—
-      delivering high-performance, user-focused solutions from concept to production.
-    </p>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="experience">
-    <h2 class="section-title">Experience</h2>
-    <div class="experience-info">
-      <div class="grid">
-
-        <!-- SGHS Global -->
-        <div class="grid-card">
-          <i class="fa-solid fa-code-branch"></i>
-          <span><strong>Full-Stack Developer</strong> — SGHS Global Pvt. Ltd. (Symmatric, Moncware, ClosetCrew/S.AI, SymConverge) — Ahmedabad, Gujarat</span>
-          <h3>Oct 2024 – Present</h3>
-          <ul>
-            <li><strong>ClosetCrew (Fashion-tech):</strong> Built web & mobile apps (Python backend, Flutter). Integrated AI product recommendations (Gemini API + FAISS), AWS S3/EC2 deployments, secure payment gateways; created large-scale product web scrapers for e-commerce ingestion.</li>
-            <li><strong>Symmatric (Social media):</strong> Developed an AI-powered caption generation system in Python to boost user engagement and implemented secure password hashing for account protection.</li>
-            <li><strong>Moncware (SaaS):</strong> Designed backend modules for authentication, partner API integrations (logistics, billing), and payments (Razorpay, Zoho Billing); built admin dashboards and customer portals with Flutter Web & Node.js APIs.</li>
-            <li>Managed MySQL/PostgreSQL, AWS deployments (EC2, S3), and CI/CD pipelines for smooth, reliable releases.</li>
-          </ul>
-        </div>
-
-        <!-- Brainybeam -->
-        <div class="grid-card">
-          <i class="fa-solid fa-chart-line"></i>
-          <span><strong>Data Scientist Intern</strong> — Brainybeam Info-Tech Pvt. Ltd., Ahmedabad</span>
-          <h3>Apr 2024</h3>
-          <p style="text-align: justify;">
-            Analyzed e-commerce customer behavior using Python (Pandas, NumPy, Matplotlib, Seaborn) to identify engagement drivers and retention patterns, informing UX improvements.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <h2 class="section-title">Recent Projects</h2>
-    <div class="project-grid">
-
-      <div class="project-card">
-        <img src="static/dressly.png" alt="Dressly project preview">
-        <h3>Dressly</h3>
-        <p>
-          Virtual wardrobe (Web + Mobile) with AI-based outfit recommendations, PostgreSQL backend, and LLaMA-3 chatbot for styling advice.
+        <p class="hero-lead">
+          Full-stack developer shipping production <strong>SaaS platforms, ERP systems and AI products</strong> end to end —
+          Python backends (Flask, FastAPI), Next.js &amp; React frontends, Flutter apps, and the messy middle where
+          payments, accounting, logistics and LLM APIs all have to click together.
         </p>
-        <div class="stack">Flask • PostgreSQL • LLaMA-3 • HTML/CSS/JS</div>
-        <div class="btn-group">
-          <div class="btn"><a href="https://github.com/vibin8/Dressly" rel="noopener">GitHub Repo</a></div>
+
+        <div class="btn-row">
+          <a class="btn btn--yellow" href="static/CV.pdf" download>
+            <span aria-hidden="true">↓</span> Download Resume
+          </a>
+          <a class="btn btn--blue" href="#projects">See the builds</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <ul class="socials" aria-label="Social links">
+          <li><a href="https://github.com/vibin8" rel="noopener" target="_blank" aria-label="GitHub">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/priyakumari7/" rel="noopener" target="_blank" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="mailto:priyakumari4j4@gmail.com" aria-label="Email">Email</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-figure">
+        <!-- brick-built figure, standing behind a brick that hides the cut -->
+        <div class="figure-stand reveal">
+          <img class="figure-img" src="static/minifig.png"
+               alt="Priya Kumari, built as a LEGO figure" width="720" height="677" loading="eager" />
+          <div class="figure-base brick brick--red" aria-hidden="true"></div>
         </div>
       </div>
 
-      <div class="project-card">
-        <img src="static/agrorishi.png" alt="AgroRishi project preview">
-        <h3>AgroRishi</h3>
-        <p>
-          IoT farming assistant with real-time sensor data, ML-based crop health analysis, and a multilingual chatbot; includes a web dashboard for insights.
-        </p>
-        <div class="stack">Flask • Bluetooth/IoT • ML • Dashboard</div>
-        <div class="btn-group">
-          <div class="btn"><a href="https://github.com/vibin8/AgroRishi" rel="noopener">GitHub Repo</a></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills">
-    <h2 class="section-title">Skills</h2>
-
-    <!-- Keep your existing progress bars if styled in CSS; labels updated -->
-    <div class="skills-grid">
-      <li>
-        <h3>Python</h3>
-        <span class="bar"><span class="python"></span></span>
-      </li>
-      <li>
-        <h3>Flask</h3>
-        <span class="bar"><span class="flask"></span></span>
-      </li>
-      <li>
-        <h3>JavaScript / Node.js</h3>
-        <span class="bar"><span class="javascript"></span></span>
-      </li>
-      <li>
-        <h3>SQL (MySQL, PostgreSQL)</h3>
-        <span class="bar"><span class="sql"></span></span>
-      </li>
-      <li>
-        <h3>AWS (EC2, S3) & CI/CD</h3>
-        <span class="bar"><span class="aws"></span></span>
-      </li>
-      <li>
-        <h3>Flutter</h3>
-        <span class="bar"><span class="flutter"></span></span>
-      </li>
-    </div>
-
-    <!-- Quick text summary version (nice for SEO/ATS) -->
-    <p class="skills-inline">
-      <strong>Stack:</strong> Python, Flask, Node.js, JavaScript, SQL, HTML/CSS, Flutter, REST APIs, MySQL, PostgreSQL, AWS (EC2, S3), Docker, Git, GitHub Actions, FAISS, Gemini API, Web Scraping
-    </p>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certificates" class="certificates">
-    <h2 class="section-title">Certificates</h2>
-    <div class="certificates-grid">
-      <div class="certificates-card">
-        <h3>Hackout’24 Participation</h3>
-        <img src="static/Hackathon.jpg" alt="Hackathon Certificate">
-      </div>
-      <div class="certificates-card">
-        <h3>Data Science Internship</h3>
-        <img src="static/ds.jpg" alt="Data Science Internship Certificate">
-      </div>
-      <div class="certificates-card">
-        <h3>AWS Cloud Computing</h3>
-        <img src="static/aws.jpg" alt="AWS Cloud Computing Certificate">
-      </div>
-      <div class="certificates-card">
-        <h3>Complete Data Science Bootcamp</h3>
-        <img src="static/dsu.jpg" alt="Data Science Bootcamp Certificate">
-      </div>
-      <div class="certificates-card">
-        <h3>Data Manipulation in Python</h3>
-        <img src="static/python.jpg" alt="NumPy & Pandas Certificate">
-      </div>
-      <div class="certificates-card">
-        <h3>Python & Flask (Beginners)</h3>
-        <img src="static/flask.jpg" alt="Flask Certificate">
-      </div>
-      <div class="certificates-card">
-        <h3>Google Code-in</h3>
-        <img src="static/gci.jpg" alt="Google Code-in Certificate">
-      </div>
-      <div class="certificates-card">
-        <h3>Fundamentals of Digital Marketing</h3>
-        <img src="static/dmg.jpg" alt="Digital Marketing Certificate">
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-<!--   <section id="contact" class="contact">
-    <div class="input-box">
-      <h2 class="section-title">Contact Me</h2>
-      <form action="https://formspree.io/f/xldrzprn" method="POST">
-        <div class="input">
-          <input type="email" name="email" placeholder="example@email.com" required />
-          <i class="fa-solid fa-envelope"></i>
-        </div>
-        <div class="input">
-          <textarea name="message" rows="4" placeholder="Your message..." required></textarea>
-          <i class="fa-solid fa-comment-dots"></i>
-        </div>
-        <button type="submit" class="btn">Submit</button>
-      </form>
-
-      <div class="contact-details">
-        <p><i class="fa-solid fa-phone"></i> +91-7048598298</p>
-        <p><i class="fa-solid fa-at"></i> priyakumari4j4@gmail.com</p>
-        <p><i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat</p>
-      </div>
-    </div>
-  </section> -->
+      <!-- piece counter -->
+      <ul class="stats" aria-label="At a glance">
+        <li class="stat brick brick--yellow"><b>6</b><span>products shipped</span></li>
+        <li class="stat brick brick--blue"><b>300+</b><span>API endpoints built on</span></li>
+        <li class="stat brick brick--green"><b>2 yrs</b><span>shipping to production</span></li>
+        <li class="stat brick brick--orange"><b>9.53</b><span>B.Tech CGPA</span></li>
+      </ul>
     </section>
-    <section id="contact" class="contact">
-        <div class="input-box">
-            <h2 class="section-title">Contact Me</h2>
-            <form action="https://formspree.io/f/xldrzprn" method="POST" method="POST">
-                <div class="input">
-                    <input type="email" name="email" placeholder="example@email.com" required>
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <button type="submit" class="btn">Submit</button>
-            </form>
 
-  <!-- Footer -->
-  <footer>
-    <ul>
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <p class="copyright">© Portfolio developed by Priya Kumari</p>
+    <!-- ══════════ 01 · ABOUT ══════════ -->
+    <section class="step" id="about">
+      <div class="step-head reveal">
+        <span class="step-no">01</span>
+        <h2>About the builder</h2>
+        <span class="step-rule" aria-hidden="true"></span>
+      </div>
+
+      <div class="about-grid">
+        <p class="about-lead reveal">
+          I like problems where the whole stack has to line up: a schema that survives real data, an API that
+          doesn't lie to the UI, and a screen someone in an office actually uses all day. Most of my work is
+          internal tooling and product platforms — quote-to-invoice ERP flows, AI recommendation and reporting
+          engines, and mobile apps — built with small teams and shipped continuously.
+        </p>
+
+        <ul class="about-cards">
+          <li class="brick brick--blue reveal">
+            <h3>Backends &amp; APIs</h3>
+            <p>Flask and FastAPI services, PostgreSQL/MySQL modelling, Celery workers, WebSockets, Alembic
+              migrations, audit trails and role-based access.</p>
+          </li>
+          <li class="brick brick--red reveal">
+            <h3>Web &amp; mobile UI</h3>
+            <p>Next.js and React dashboards with real tables, filters and charts — plus Flutter apps on iOS
+              and Android.</p>
+          </li>
+          <li class="brick brick--green reveal">
+            <h3>AI, wired in</h3>
+            <p>Claude and Gemini APIs, embeddings and FAISS vector search, recommendation and natural-language
+              reporting features that ship to real users.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════ 02 · EXPERIENCE ══════════ -->
+    <section class="step" id="experience">
+      <div class="step-head reveal">
+        <span class="step-no">02</span>
+        <h2>Experience</h2>
+        <span class="step-rule" aria-hidden="true"></span>
+      </div>
+
+      <!-- current role -->
+      <article class="job reveal">
+        <header class="job-head brick brick--dark">
+          <div>
+            <h3>Full-Stack Developer</h3>
+            <p>SGHS Global Pvt. Ltd. / SymConverge &middot; Ahmedabad, Gujarat</p>
+          </div>
+          <span class="job-date">Oct 2024 &ndash; Present</span>
+        </header>
+
+        <p class="job-note">Six products, one stack of bricks:</p>
+
+        <div class="stack-of-bricks">
+
+          <!-- NLS -->
+          <article class="product brick brick--red reveal">
+            <header class="product-head">
+              <h4>NLS</h4>
+              <span class="product-kind">B2B footwear manufacturing ERP / CRM</span>
+            </header>
+            <p>
+              Core developer on an ERP covering <strong>leads → quotations → sales orders → production →
+              invoicing</strong>, spanning a 300+ endpoint Flask API and a 500+ component Next.js admin dashboard.
+            </p>
+            <ul>
+              <li>Built the quotation workflow end to end — creation, admin approve/reject with reasons, editable
+                rejected quotes, conversion to sales orders, and order/invoice void &amp; delete with audit trails.</li>
+              <li>Implemented pricing and billing across API and UI: distributor and supplier pricing, price
+                overrides, discounts, extra charges, editable shipping and coupon codes carried into invoices.</li>
+              <li>Shipped role-based access control with custom roles, a permission catalog and sales-rep scoping.</li>
+              <li>Integrated QuickBooks Online (sync status, retries, void gating, paginated logs) and Cirro/eLogistic
+                shipping with order-type-aware dispatch rules.</li>
+              <li>Built sizing-kit &amp; bundle ordering, the designer/customization module (logos, laces, ankle
+                support, S3 uploads) and Recharts reporting dashboards.</li>
+            </ul>
+            <ul class="chips" aria-label="Stack">
+              <li>Next.js 16</li><li>React 19</li><li>Tailwind</li><li>Flask</li><li>PostgreSQL</li>
+              <li>Celery</li><li>Redis</li><li>Socket.IO</li><li>AWS S3</li>
+            </ul>
+          </article>
+
+          <!-- Styailist -->
+          <article class="product brick brick--blue reveal">
+            <header class="product-head">
+              <h4>Styailist</h4>
+              <span class="product-kind">AI styling &amp; recommendation engine for e-commerce</span>
+            </header>
+            <ul>
+              <li>Built the <strong>virtual try-on service</strong> — FASHN API integration with async submit-and-poll,
+                person-image upload pipeline and style-passport lookup, so shoppers preview garments on their own photo.</li>
+              <li>Built the <strong>AI tag-extraction service</strong>: Gemini-driven attribute tagging with OpenCV /
+                scikit-learn colour and silhouette extractors, behind a platform-agnostic field-extractor abstraction
+                reused across Shopify and WooCommerce catalogs.</li>
+              <li>Instrumented storefront search-query logging with Celery-backed analytics to measure and improve
+                recommendation quality.</li>
+            </ul>
+            <ul class="chips" aria-label="Stack">
+              <li>FastAPI</li><li>Gemini</li><li>Fashion-CLIP</li><li>Elasticsearch</li><li>MySQL</li>
+              <li>Celery</li><li>OpenCV</li><li>Docker</li>
+            </ul>
+          </article>
+
+          <!-- Databook -->
+          <article class="product brick brick--green reveal">
+            <header class="product-head">
+              <h4>Databook</h4>
+              <span class="product-kind">AI natural-language reporting SaaS over Cin7Core inventory</span>
+            </header>
+            <ul>
+              <li>Started both services for a Claude-powered agent that turns plain-English questions into Cin7Core
+                (DEAR) API queries and returns charted, exportable reports.</li>
+              <li>Backend: FastAPI routers for auth, Cin7 connect, report agent, templates, uploads, referrals and
+                Razorpay billing, over an endpoint knowledge base built by automated API probing.</li>
+              <li>Frontend: TanStack Start &amp; Router with shadcn/Radix and Tailwind — dashboard, report history and
+                templates, chart and data-preview panels, plan gating, responsive layout.</li>
+              <li>Containerized with Docker and set up GitHub Actions CI/CD publishing to AWS ECR.</li>
+            </ul>
+            <ul class="chips" aria-label="Stack">
+              <li>FastAPI</li><li>Claude API</li><li>Firebase</li><li>MySQL</li><li>React 19</li>
+              <li>TanStack Start</li><li>Docker</li><li>GitHub Actions</li>
+            </ul>
+          </article>
+
+          <!-- ClosetCrew -->
+          <article class="product brick brick--orange reveal">
+            <header class="product-head">
+              <h4>ClosetCrew <span class="product-alias">(formerly S.AI)</span></h4>
+              <span class="product-kind">AI fashion-tech platform — mobile + backend</span>
+            </header>
+            <ul>
+              <li>Led full-stack development of the app and backend: AI outfit, body-type and colour analysis, and
+                product recommendations using the Gemini API with FAISS vector search.</li>
+              <li>Built large-scale e-commerce product scrapers for catalog ingestion, a Celery/Redis ranking service,
+                S3 media storage, EC2 deployments and payment-gateway checkout.</li>
+            </ul>
+            <ul class="chips" aria-label="Stack">
+              <li>Flutter</li><li>Flask</li><li>Gemini API</li><li>FAISS</li><li>Firebase</li>
+              <li>Celery</li><li>AWS EC2/S3</li>
+            </ul>
+          </article>
+
+          <!-- Symmatric + Moncware -->
+          <article class="product product--compact brick brick--purple reveal">
+            <header class="product-head">
+              <h4>Symmatric</h4>
+              <span class="product-kind">Social platform</span>
+            </header>
+            <p>AI caption generation in Python to lift engagement, plus secure password hashing for account protection.</p>
+          </article>
+
+          <article class="product product--compact brick brick--teal reveal">
+            <header class="product-head">
+              <h4>Moncware</h4>
+              <span class="product-kind">SaaS platform</span>
+            </header>
+            <p>Backend modules for authentication, partner API integrations (logistics, billing) and payments
+              (Razorpay, Zoho Billing); admin dashboards and customer portals in Flutter Web &amp; Node.js.</p>
+          </article>
+
+        </div>
+      </article>
+
+      <!-- internship -->
+      <article class="job reveal">
+        <header class="job-head brick brick--dark">
+          <div>
+            <h3>Data Science Intern</h3>
+            <p>Brainybeam Info-Tech Pvt. Ltd. &middot; Ahmedabad, Gujarat</p>
+          </div>
+          <span class="job-date">Apr 2024</span>
+        </header>
+        <div class="stack-of-bricks">
+          <article class="product product--compact brick brick--grey reveal">
+            <p>Analyzed e-commerce customer behaviour in Python (Pandas, NumPy, Matplotlib, Seaborn) to identify
+              engagement drivers and retention patterns, informing UX improvements.</p>
+          </article>
+        </div>
+      </article>
+    </section>
+
+    <!-- ══════════ 03 · PROJECTS ══════════ -->
+    <section class="step" id="projects">
+      <div class="step-head reveal">
+        <span class="step-no">03</span>
+        <h2>Personal builds</h2>
+        <span class="step-rule" aria-hidden="true"></span>
+      </div>
+
+      <div class="sets">
+
+        <article class="set reveal">
+          <div class="set-box brick brick--blue">
+            <div class="set-meta">
+              <span class="set-no">SET 2024-01</span>
+              <span class="set-pieces">4 pieces</span>
+            </div>
+            <div class="set-shot">
+              <img src="static/dressly.jpg" alt="Dressly web app screenshot" loading="lazy" width="640" height="320" />
+            </div>
+            <div class="set-body">
+              <h3>Dressly</h3>
+              <p>Virtual wardrobe on web and mobile with AI-based outfit recommendations, a PostgreSQL backend and a
+                LLaMA-3 chatbot for styling advice.</p>
+              <ul class="chips" aria-label="Stack">
+                <li>Flask</li><li>PostgreSQL</li><li>LLaMA-3</li><li>JS</li>
+              </ul>
+              <a class="btn btn--small btn--ghost" href="https://github.com/vibin8/Dressly" rel="noopener" target="_blank">
+                View repo <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="set reveal">
+          <div class="set-box brick brick--green">
+            <div class="set-meta">
+              <span class="set-no">SET 2024-02</span>
+              <span class="set-pieces">4 pieces</span>
+            </div>
+            <div class="set-shot">
+              <img src="static/agrorishi.jpg" alt="AgroRishi dashboard screenshot" loading="lazy" width="640" height="320" />
+            </div>
+            <div class="set-body">
+              <h3>AgroRishi <span class="set-badge">Hackout&rsquo;24 · DA-IICT</span></h3>
+              <p>IoT farming assistant with live sensor data, ML crop-health analysis and a multilingual chatbot,
+                plus a web dashboard for insights.</p>
+              <ul class="chips" aria-label="Stack">
+                <li>Flask</li><li>IoT</li><li>ML</li><li>Dashboard</li>
+              </ul>
+              <a class="btn btn--small btn--ghost" href="https://github.com/vibin8/AgroRishi" rel="noopener" target="_blank">
+                View repo <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════ 04 · SKILLS ══════════ -->
+    <section class="step" id="skills">
+      <div class="step-head reveal">
+        <span class="step-no">04</span>
+        <h2>Parts bin</h2>
+        <span class="step-rule" aria-hidden="true"></span>
+      </div>
+
+      <div class="wall">
+        <section class="wall-row reveal" aria-labelledby="sk-lang">
+          <h3 id="sk-lang" class="wall-label">Languages</h3>
+          <ul class="wall-bricks">
+            <li class="chip-brick brick--red">Python</li>
+            <li class="chip-brick brick--red">JavaScript</li>
+            <li class="chip-brick brick--red">TypeScript</li>
+            <li class="chip-brick brick--red">Dart</li>
+            <li class="chip-brick brick--red">SQL</li>
+            <li class="chip-brick brick--red">HTML / CSS</li>
+          </ul>
+        </section>
+
+        <section class="wall-row reveal" aria-labelledby="sk-fw">
+          <h3 id="sk-fw" class="wall-label">Frameworks</h3>
+          <ul class="wall-bricks">
+            <li class="chip-brick brick--blue">Flask</li>
+            <li class="chip-brick brick--blue">FastAPI</li>
+            <li class="chip-brick brick--blue">Next.js</li>
+            <li class="chip-brick brick--blue">React</li>
+            <li class="chip-brick brick--blue">TanStack Start</li>
+            <li class="chip-brick brick--blue">Flutter</li>
+            <li class="chip-brick brick--blue">Node.js</li>
+            <li class="chip-brick brick--blue">Celery</li>
+            <li class="chip-brick brick--blue">SQLAlchemy</li>
+            <li class="chip-brick brick--blue">Tailwind</li>
+          </ul>
+        </section>
+
+        <section class="wall-row reveal" aria-labelledby="sk-data">
+          <h3 id="sk-data" class="wall-label">Data &amp; search</h3>
+          <ul class="wall-bricks">
+            <li class="chip-brick brick--green">PostgreSQL</li>
+            <li class="chip-brick brick--green">MySQL</li>
+            <li class="chip-brick brick--green">MongoDB</li>
+            <li class="chip-brick brick--green">Redis</li>
+            <li class="chip-brick brick--green">Elasticsearch</li>
+            <li class="chip-brick brick--green">Firestore</li>
+          </ul>
+        </section>
+
+        <section class="wall-row reveal" aria-labelledby="sk-cloud">
+          <h3 id="sk-cloud" class="wall-label">Cloud &amp; DevOps</h3>
+          <ul class="wall-bricks">
+            <li class="chip-brick brick--yellow">AWS EC2</li>
+            <li class="chip-brick brick--yellow">AWS S3</li>
+            <li class="chip-brick brick--yellow">AWS ECR</li>
+            <li class="chip-brick brick--yellow">Docker</li>
+            <li class="chip-brick brick--yellow">Terraform</li>
+            <li class="chip-brick brick--yellow">GitHub Actions</li>
+            <li class="chip-brick brick--yellow">Vercel</li>
+            <li class="chip-brick brick--yellow">Cloudflare</li>
+            <li class="chip-brick brick--yellow">Git</li>
+          </ul>
+        </section>
+
+        <section class="wall-row reveal" aria-labelledby="sk-ai">
+          <h3 id="sk-ai" class="wall-label">AI / ML</h3>
+          <ul class="wall-bricks">
+            <li class="chip-brick brick--orange">Claude API</li>
+            <li class="chip-brick brick--orange">Gemini API</li>
+            <li class="chip-brick brick--orange">LLaMA-3</li>
+            <li class="chip-brick brick--orange">Fashion-CLIP</li>
+            <li class="chip-brick brick--orange">FAISS</li>
+            <li class="chip-brick brick--orange">Recommenders</li>
+            <li class="chip-brick brick--orange">OpenCV</li>
+            <li class="chip-brick brick--orange">scikit-learn</li>
+          </ul>
+        </section>
+
+        <section class="wall-row reveal" aria-labelledby="sk-int">
+          <h3 id="sk-int" class="wall-label">Integrations</h3>
+          <ul class="wall-bricks">
+            <li class="chip-brick brick--purple">Stripe</li>
+            <li class="chip-brick brick--purple">Razorpay</li>
+            <li class="chip-brick brick--purple">Zoho Billing</li>
+            <li class="chip-brick brick--purple">QuickBooks</li>
+            <li class="chip-brick brick--purple">Shopify</li>
+            <li class="chip-brick brick--purple">WooCommerce</li>
+            <li class="chip-brick brick--purple">Shipping APIs</li>
+            <li class="chip-brick brick--purple">Google OAuth</li>
+            <li class="chip-brick brick--purple">Firebase Auth</li>
+            <li class="chip-brick brick--purple">Socket.IO</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="edu brick brick--dark reveal">
+        <h3>Education</h3>
+        <p><strong>B.Tech, Computer Engineering</strong> — Indus University (2025) &middot; CGPA 9.53</p>
+        <p class="edu-sub">12th: 95.4% (2021) &middot; 10th: 98.5% (2019) — Army Public School, Ahmedabad</p>
+      </div>
+    </section>
+
+    <!-- ══════════ 05 · CERTIFICATES ══════════ -->
+    <section class="step" id="certificates">
+      <div class="step-head reveal">
+        <span class="step-no">05</span>
+        <h2>Collected tiles</h2>
+        <span class="step-rule" aria-hidden="true"></span>
+      </div>
+
+      <ul class="tiles">
+        <li class="tile reveal"><button type="button" class="tile-btn" data-full="static/aws.jpg" data-title="AWS Cloud Computing">
+          <img src="static/aws.jpg" alt="AWS Cloud Computing certificate" loading="lazy" /><span>AWS Cloud Computing</span></button></li>
+        <li class="tile reveal"><button type="button" class="tile-btn" data-full="static/dsu.jpg" data-title="Complete Data Science Bootcamp">
+          <img src="static/dsu.jpg" alt="Data Science Bootcamp certificate" loading="lazy" /><span>Data Science Bootcamp</span></button></li>
+        <li class="tile reveal"><button type="button" class="tile-btn" data-full="static/flask.jpg" data-title="Python &amp; Flask for Beginners">
+          <img src="static/flask.jpg" alt="Python and Flask certificate" loading="lazy" /><span>Python &amp; Flask</span></button></li>
+        <li class="tile reveal"><button type="button" class="tile-btn" data-full="static/python.jpg" data-title="Data Manipulation in Python">
+          <img src="static/python.jpg" alt="Data manipulation in Python certificate" loading="lazy" /><span>Data Manipulation</span></button></li>
+        <li class="tile reveal"><button type="button" class="tile-btn" data-full="static/ds.jpg" data-title="Data Science Internship">
+          <img src="static/ds.jpg" alt="Data science internship certificate" loading="lazy" /><span>DS Internship</span></button></li>
+        <li class="tile reveal"><button type="button" class="tile-btn" data-full="static/Hackathon.jpg" data-title="Hackout&rsquo;24 Participation">
+          <img src="static/Hackathon.jpg" alt="Hackout 24 participation certificate" loading="lazy" /><span>Hackout&rsquo;24</span></button></li>
+        <li class="tile reveal"><button type="button" class="tile-btn" data-full="static/gci.jpg" data-title="Google Code-in">
+          <img src="static/gci.jpg" alt="Google Code-in certificate" loading="lazy" /><span>Google Code-in</span></button></li>
+        <li class="tile reveal"><button type="button" class="tile-btn" data-full="static/dmg.jpg" data-title="Fundamentals of Digital Marketing">
+          <img src="static/dmg.jpg" alt="Digital marketing certificate" loading="lazy" /><span>Digital Marketing</span></button></li>
+      </ul>
+    </section>
+
+    <!-- ══════════ 06 · CONTACT ══════════ -->
+    <section class="step" id="contact">
+      <div class="step-head reveal">
+        <span class="step-no">06</span>
+        <h2>Let&rsquo;s build something</h2>
+        <span class="step-rule" aria-hidden="true"></span>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card brick brick--yellow reveal">
+          <h3>Say hello</h3>
+          <p>Open to full-stack roles and interesting product work. Drop your email and a note — I reply to everything.</p>
+          <form id="contact-form" action="https://formspree.io/f/xldrzprn" method="POST">
+            <label class="field">
+              <span>Your email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label class="field">
+              <span>Message</span>
+              <textarea name="message" rows="4" placeholder="What are we building?"></textarea>
+            </label>
+            <button type="submit" class="btn btn--red">Send it <span aria-hidden="true">→</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <ul class="contact-details reveal">
+          <li class="brick brick--blue"><span class="cd-label">Email</span>
+            <a href="mailto:priyakumari4j4@gmail.com">priyakumari4j4@gmail.com</a></li>
+          <li class="brick brick--red"><span class="cd-label">Phone</span>
+            <a href="tel:+917048598298">+91 70485 98298</a></li>
+          <li class="brick brick--green"><span class="cd-label">GitHub</span>
+            <a href="https://github.com/vibin8" rel="noopener" target="_blank">github.com/vibin8</a></li>
+          <li class="brick brick--orange"><span class="cd-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/priyakumari7/" rel="noopener" target="_blank">in/priyakumari7</a></li>
+          <li class="brick brick--grey"><span class="cd-label">Based in</span>
+            <span>Ahmedabad, Gujarat, India</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer-studs" aria-hidden="true"></div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="copyright">
+      Built brick by brick by Priya Kumari &middot; <span id="year">2026</span>
+      <span class="footer-hint">— click any brick, they press in.</span>
+    </p>
   </footer>
+
+  <!-- certificate lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <figure>
+      <img id="lightbox-img" src="" alt="" />
+      <figcaption id="lightbox-cap"></figcaption>
+    </figure>
+  </div>
 
   <script src="static/script.js"></script>
 </body>
 </html>
-
